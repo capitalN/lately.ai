@@ -12,7 +12,7 @@ let toggle = ()=>{
    let bill3 = document.getElementById("bill-3");
 //   price1="";
 //   price2="";
-//   price3="";
+//   price3
    //console.log(price1)
   // flag=true;
    if(flag==true){
