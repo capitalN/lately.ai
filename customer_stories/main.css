@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#top-div{
+    border: 2px solid;
+    padding: 30px;
+    line-height: 30px;
+    background-color: #174c43;
+}
+
+#mid-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.card{
+    height: 200px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card a{
+    color: #00c66b;
+    text-decoration: none;
+    font-weight:bold ;
+}
+img{
+    width: 50%;
+}
+
+#bottom-div{
+    text-align: center;
+    background-color: #e8f8f2;
+    padding: 20px;
+}
+a>button{   
+    padding: 10px;
+    border: 2px solid #00c66b;
+    background-color: #fff;
+    font-weight: bold;
+    color: #00c66b;
+}
+a>button:hover{
+    color: #fff;
+    background-color: #00c66b;
+}
