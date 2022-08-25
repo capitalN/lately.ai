@@ -1,0 +1,2 @@
+GOing to build Homepage, header and footer.
+First build Navbar
