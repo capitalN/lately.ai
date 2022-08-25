@@ -81,46 +81,41 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-#cr-img{
+#image-div{
     max-width: 1060px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
+    /* border: 1px solid red; */
 }
-#cr-img>img{
-    width:900px;
-    padding-right: 50px;
-    padding-left: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+#image-div img{
+    width: 48%;
+    margin-top: 10px;
+    /* border: 1px solid red; */
 }
-#cr-div{
-    max-width: 1060px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.subdiv-cr{
+#image-side{
     display: inline-block;
-    width:33%;
+    width: 47%;
+    margin-left: 40px;
+    /* border: 1px solid red; */
+    margin-top: 0px;
+    vertical-align: 300%;
 }
-.subdiv-cr>h3{
-    font-family: 'Noto Sans', sans-serif;
+#image-side h3{
+    font-family: ProximaNova, sans-serif;
     color: #174c43;
-    margin-bottom: 6px;
     font-size: 24px;
+    line-height: 30px;
 }
-.subdiv-cr>p{
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 15px;
-    line-height: 22px;
+#image-side p{
     margin-bottom: 10px;
     color: #5f5f5f;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: -20px;
 }
-.subdiv-cr>h4{
-    color:#00c66b;
-}
+
+
 #cont-software{
     font-family: 'Mark simonson proxima nova', sans-serif;
     color: #333;
@@ -130,7 +125,7 @@ body{
     padding-bottom: 50px;
 }
 #soft-head{
-    max-width: 600px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -167,6 +162,9 @@ body{
     color: #5f5f5f;
     line-height: 24px;
 }
+
+
+
 #person{
     background-color: #174c43;
     color: white;
@@ -210,6 +208,9 @@ body{
     margin-top: 35px;
     margin-right: 50px;
 }
+
+
+
 #ai{
     background-color: #e6f6ef;
     padding-bottom: 50px;
