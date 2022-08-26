@@ -46,18 +46,47 @@ a{
 }
 
 #main{
-    display: flex;
+    display: grid;
+    grid-template-columns: 750px 400px;
+    justify-content: space-around;
+    padding: 20px;
 }
 #main>div{
-    border: 2px solid;
-    width: 50%;
     padding: 20px;
+    margin: 20px;
 }
 img{
     width: 250px;
     border-radius: 10px;
     margin: 10px;
 }
+#book_info img:first-child{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 #book_info>div{
   display: flex;
+}
+#form{
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+#form p{
+    line-height: 0;
+    text-align: left;
+}
+input{
+    width: 95%;
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+button{
+    padding: 10px 20px;
+    border: 0;
+    background-color:#00c66b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
