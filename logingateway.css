@@ -1,0 +1,87 @@
+body{
+    background-color:rgb(228,242,234);
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    height:50px;
+    border:0px solid red;
+    background-color: rgb(255,255,255);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position:sticky;
+    top:0px;
+    z-index: 1;
+}
+nav>div{
+    width:70%;
+    margin:auto;
+    border:0px solid blue;
+}
+nav>div>a>img{
+    width:10%;
+}
+#details{
+    width: 30%;
+    margin:auto;
+    border:0px solid blue;
+    margin-top:60px;
+}
+#details>h1{
+    font-size: 38px;
+    font-weight: 500;
+    color:rgb(66,66,66);
+}
+#details>p{
+    color:rgb(66,66,66);
+    font-size: 20px;
+    margin-top: -20px;
+}
+form{
+    margin-top: 20px;
+    margin-left:40px;
+}
+form>#g-login{
+    display:flex;
+    gap:10px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+input[type="email"]{
+    width:60%;
+    height:30px;
+    border-radius: 5px;
+}
+#login-btn{
+    margin-left:20px;
+    margin-right: 20px;
+    display:flex;
+    justify-content: flex-end;
+}
+#login-btn>div{
+    display:flex;
+    gap:50px;
+    justify-content:space-between;
+    align-items: center;
+}
+#login-btn>div>button{
+    /* width:100px; */
+    font-size: 12px;
+    color:white;
+    font-weight: bold;
+    background-color: rgb(102,102,102);
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: none;
+}
+#login-btn>div>button:hover{
+    cursor: pointer;
+}
+#login-btn>div>a{
+    font-size: 14px;
+    color:blue;
+    text-decoration: none;
+}
+#login-btn>div>a:hover{
+    color: rgb(6,165,78);
+    text-decoration: underline;
+}
