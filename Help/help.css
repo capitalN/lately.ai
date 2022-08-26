@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+#top-div{
+    border: 2px solid;
+    padding: 50px;
+    line-height: 30px;
+    background-color: #174c43;
+    color: white;
+    text-align: center;
+}
+#bottom-div{
+    text-align: center;
+    background-color: #e8f8f2;
+    padding: 50px;
+}
+#bottom-div a>button{   
+    padding: 10px;
+    border: 2px solid #00c66b;
+    background-color: #fff;
+    font-weight: bold;
+    color: #00c66b;
+}
+#bottom-div a>button:hover{
+    color: #fff;
+    background-color: #00c66b;
+}
+
+#help_list a{
+    text-decoration: none;
+    display: block;
+    line-height: 30px;
+    border-bottom: 1px solid gainsboro;
+    padding: 10px;
+}
+
+#help_list{
+    width: 60%;
+    margin: auto;
+}

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+#top-div{
+    border: 2px solid;
+    padding: 50px;
+    line-height: 30px;
+    background-color: #174c43;
+    color: white;
+    text-align: center;
+}
+#bottom-div{
+    text-align: center;
+    background-color: #e8f8f2;
+    padding: 50px;
+}
+#bottom-div a>button{   
+    padding: 10px;
+    border: 2px solid #00c66b;
+    background-color: #fff;
+    font-weight: bold;
+    color: #00c66b;
+}
+#bottom-div a>button:hover{
+    color: #fff;
+    background-color: #00c66b;
+}
+
+
+#container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 50px;
+    text-align: center;
+    margin: 50px auto;
+}
+a{
+    text-decoration: none;
+}
+.card div{
+    padding:0 20px;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 750px 400px;
+    justify-content: space-around;
+    padding: 20px;
+}
+#main>div{
+    padding: 20px;
+    margin: 20px;
+}
+img{
+    width: 250px;
+    border-radius: 10px;
+    margin: 10px;
+}
+#book_info img:first-child{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#book_info>div{
+  display: flex;
+}
+#form{
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+#form p{
+    line-height: 0;
+    text-align: left;
+}
+input{
+    width: 95%;
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+button{
+    padding: 10px 20px;
+    border: 0;
+    background-color:#00c66b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
