@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Position ANYTHING</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        #top-div{
+            border: 2px solid;
+            padding: 30px;
+            line-height: 30px;
+            background-color: #174c43;
+            text-align: center;
+            color: white;
+        }
+
+        #container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 40px;
+        }
+        .card{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .card>div{
+            padding:10px 20px;
+        }
+
+        .card>img{
+            width: 100%;
+            border-radius:10px 10px 0px 0px;
+        }
+        .card:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+
+        #bottom-div{
+            text-align: center;
+            background-color: #e8f8f2;
+            padding: 20px;
+        }
+        button{   
+            padding: 10px;
+            border: 2px solid #00c66b;
+            font-weight: bold;
+            background-color: transparent;
+            color: #00c66b;
+        }
+        button:hover{
+            color: #fff;
+            background-color: #00c66b;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <h1>navbar</h1>
+    </div>
+    <div id="top-div">
+        <h3 style="color: #00c66b;">LATELY OFFICE HOURS</h3>
+        <h1 style="font-size: 40px;">Lately LIVE Replays</h1>
+        <p>10 Minutes. One Diabolical Fact.
+            Our most favorite series hosted by Kate Bradley Chernis and David Allison.</p>
+        <a href=""><button style="color: white;">Sign Up Here</button></a>
+    </div>
+    <div id="container"></div>
+    <div id="bottom-div">
+        <h1>Ready to start generating more effective social posts with AI?</h1>
+        <a href=""><button>TRY IT FREE</button></a>
+    </div>
+    <div id="footer">
+        <h1>footer</h1>
+    </div>
+</body>
+</html>
+
+<script>
+    let arr = [
+        {
+            image : "https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60c2172fa282d854453aca5b_h9-p-500.png",
+            title : "Ep 10 – Positivity"
+        },
+        {
+            image : "https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60c216d5b1d4d078432f441e_h7-p-500.png",
+            title : "Ep 09 – Tradition"
+        },
+        {
+            image : "https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60c2166ff331016fd7b3e3db_h8-p-500.png",
+            title : "Ep 08 – Environmentalism"
+        },
+
+        {
+            image : "https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60c2163a61a2fc056009bc02_h6-p-500.png",
+            title : "Ep 07 – Creativity"
+        },
+        {
+            image : "https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60c2158c28a7262023cbd7bf_h5-p-500.png",
+            title : "Ep 06 – Happiness"
+        },
+        {
+            image : "https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60c2155328a72660c9cbd6be_h4-p-500.png",
+            title : "Ep 05 – Loyalty"
+        },
+
+        {
+            image : "https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60c2151e37ff426adc02c523_h3-p-500.png",
+            title : "Ep 04 – Personal Responsibility"
+        },
+        {
+            image : "https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60c2151378262f7f9dab47ec_h2-p-500.png",
+            title : "Ep 03 – Personal Growth"
+        },
+        {
+            image : "https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60c214cf6618b978067bbc98_h1-p-500.png",
+            title : "Ep 02 – Relationships"
+        }        
+    ]
+
+let x = 0;
+function append(arr){
+    arr.forEach(({image, title}) => {
+        let card = document.createElement("div")
+        card.setAttribute("class","card");
+
+        card.addEventListener("click",function(){
+            readMore();
+        })
+
+        let img = document.createElement("img");
+        img.src = image;
+
+        let div = document.createElement("div")
+        let div2 = document.createElement("div")
+        
+        let ttl = document.createElement("h3");
+        ttl.innerText = title;
+
+        let a = document.createElement("a");
+        a.href="#";
+        a.innerText="Read More";
+
+        div.append(ttl);
+        div2.append(a)
+        card.append(img,div,div2)
+        document.getElementById("container").append(card);
+    });
+}
+append(arr);
+
+let readMore = (i) => {
+    window.location.href="./position_read_more.html"
+}
+</script>
+
+
+<!-- 
+    branch - fw20_0091_day-3
+ -->
