@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+#top-div{
+    border: 2px solid;
+    padding: 30px;
+    line-height: 30px;
+    background-color: #174c43;
+    text-align: center;
+    color: white;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 40px;
+}
+.card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card>div{
+    padding:10px 20px;
+}
+
+.card>img{
+    width: 100%;
+    border-radius:10px 10px 0px 0px;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+#bottom-div{
+    text-align: center;
+    background-color: #e8f8f2;
+    padding: 20px;
+}
+button{   
+    padding: 10px;
+    border: 2px solid #00c66b;
+    font-weight: bold;
+    background-color: transparent;
+    color: #00c66b;
+}
+button:hover{
+    color: #fff;
+    background-color: #00c66b;
+}
+
+#pagination{
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
+#pagination>button{
+    padding: 10px;
+    color: black;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid;
+}
+#pagination>button:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
