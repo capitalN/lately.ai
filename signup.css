@@ -1,0 +1,101 @@
+*{
+    background-color: rgb(247,249,251);
+    font-family: sans-serif;
+}
+#signup-container{
+    width: 100%;
+    border:0px solid red;
+    margin-top: 70px;
+}
+#signup-top{
+    width: 70%;
+    margin:auto;
+}
+#signup-top>h3{
+    font-size: 28px;
+    font-weight: 500;
+}
+#signup-top>p{
+    font-size: 16px;
+    margin-top: -20px;
+}
+
+#signup-bottom{
+    width: 70%;
+    margin:auto;
+    border:0px solid blue;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:50px;
+}
+#signup-bottom>#left>#name{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    gap:30px;
+}
+#signup-bottom>#left>fieldset,#signup-bottom>#left>#name>fieldset{
+    border:none;
+    padding-left: 0px;
+}
+legend{
+    font-size: 16px;
+    font-weight: 300;
+    color:rgb(78,91,104);
+}
+input[type="text"], input[type="password"], input[type="email"]{
+    width:100%;
+    height:30px;
+    border-radius: 5px;
+    border:1px solid pink;
+    background-color: white;
+}
+input[type="submit"]{
+    background-color: rgb(113,196,133);
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px 50px 10px 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+a{
+    color:rgb(113,196,133);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+#signup-bottom>#right{
+    border:0px solid pink;
+    padding-bottom: 0px;
+}
+#signup-bottom>#right>div{
+    border-radius:10px;
+    border:1px solid grey;
+}
+#signup-bottom>#right>div>h3{
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #304659 ;
+}
+#signup-bottom>#right>div>h3>b{
+    color: #28a745;
+}
+#signup-bottom>#right>div>p>img{
+    background-color: rgb(32,199,99);
+    border-radius: 50%;
+    width:18%;
+    position: relative;
+    bottom:50%;
+    left: 40%;
+    right:40%;
+    z-index: 1;
+}
+#signup-bottom>#right>div>p{
+    background-color: rgb(242,242,242);
+    height:80px;
+    margin-bottom: 0px;
+}
