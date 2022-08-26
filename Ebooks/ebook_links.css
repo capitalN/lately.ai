@@ -38,14 +38,26 @@ body{
     text-align: center;
     margin: 50px auto;
 }
-img{
-    width: 100%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 10px;
-}
 a{
     text-decoration: none;
 }
 .card div{
     padding:0 20px;
+}
+
+#main{
+    display: flex;
+}
+#main>div{
+    border: 2px solid;
+    width: 50%;
+    padding: 20px;
+}
+img{
+    width: 250px;
+    border-radius: 10px;
+    margin: 10px;
+}
+#book_info>div{
+  display: flex;
 }
