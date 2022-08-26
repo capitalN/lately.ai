@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
+
 #top-div{
     padding: 20px 0;
     background-color: #174c43;
