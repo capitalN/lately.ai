@@ -13,7 +13,7 @@ let myFunc=(event)=>{
         }
     }
     if(flag){
-        window.location.href="index.html"
+        window.location.href="login.html"
     }
     else{
       let x=  document.getElementById("sorry")
