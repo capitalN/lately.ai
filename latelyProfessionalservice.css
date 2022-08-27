@@ -1,0 +1,272 @@
+
+
+/* letely professional servise */
+
+#schedualcall{
+    border: 1px solid red;
+   height: 500px;
+   
+    background-color:#174c43;
+    margin-top: 80px;
+   padding-left: 190px;
+   
+}
+#schedualcall>h3{
+    margin-bottom: 0px;
+    color: #00c66b;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+   
+    margin-top: 60px;
+    
+}
+#schedualcall>h1{
+    margin-top: 10px;
+    margin-bottom: 18px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #fff;
+    font-size: 44px;
+    line-height: 50px;
+    font-weight: 800;
+
+}
+#schedualcall>h2{
+    width: 50%;
+    padding-right: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 22px;
+}
+#schedualcall button{
+    text-decoration: none;
+    border:3px solid  #00c66b;
+    background-color: transparent;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+#schedualcall button:hover{
+    background-color: #00c66b;
+}
+
+#serviceboxx{
+    display: grid;
+   
+    height: auto;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(10,1fr);
+    justify-items: center;
+    padding: 60px;
+}
+#serviceboxx>div{
+  
+    width: 500px;
+    height: auto;
+    
+}
+.setup{
+    display: block;
+    margin-bottom: 10px;
+    color: #00c66b;
+    font-size: 30px; 
+   
+}
+em{
+font-style: italic;
+color: #133d36;
+font-size: 20px;
+line-height: 22px;
+list-style-type: decimal;
+}
+.alldet>p{
+font-weight: bold;
+display: block;
+margin-bottom: 30px;
+color: #133d36;
+font-size: 18px;
+line-height: 22px;
+list-style-type: decimal;
+
+}
+.alldet>h2{
+
+display: block;
+margin-bottom: 4px;
+font-size: 24px;
+}
+
+#kimGonzales{
+display: grid;
+height: 450px;
+
+ background-color: #133d36;
+}
+#kimGonzales>div{
+  
+   height: 220px;
+   width: 60%;
+   margin: auto;
+}
+#fbox>h2{
+padding-top: 30px;
+flex-direction: row;
+font-family: 'Noto Sans', sans-serif;
+color: #fff;
+font-size: 24px;
+line-height: 30px;
+font-weight: 300;
+text-align: left;
+}
+#sbox>img{
+height: 150px;
+border-radius: 50%;
+
+}
+#sbox>h2{
+font-family: 'Noto Sans', sans-serif;
+display: block;
+margin-left: 180px;
+margin-top: -100px;
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+
+}
+#sbox>h3{
+margin-left:180px ;
+margin-top: -15px;
+color: #fff;
+
+font-weight: 600;
+
+
+}
+#sbox>#vlogo{
+
+display: block;
+width: 180px;
+height: 120px;
+margin-left: 580px;
+margin-top: -100px;
+
+}
+
+
+/* bootom section */
+
+
+
+#fooder{
+display: grid;
+
+height: 850px;
+}
+#fooder>div:nth-child(2){
+height: auto;
+
+}
+.boxx{
+display: grid;
+height: 250px;
+background-image:
+linear-gradient(to bottom, rgba(255, 255, 251, 0.5), rgba(223, 223, 223, 0.5)),
+url('https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fecf40bea5148a41aa207a7_pattern-light.svg');
+
+
+}
+
+
+.h1teg>h1{
+text-align: center;
+width: 70%;
+font-size: 50px;
+margin-left: 200px;
+margin-top:50px ;
+color: #174c43;
+margin-bottom: -20px;
+
+}
+#fooder>div:nth-child(1) button{
+
+margin-left: 580px;
+padding: 15px;
+border: 2px solid  #00c66b;  
+width: auto;
+font-family: 'Noto Sans', sans-serif;
+font-weight: 700;
+border-radius: 5px;
+}
+#fooder>div:nth-child(3){
+display: grid;
+}
+#fooder>div:nth-child(3)>div{
+width: 100%;
+height: 99px;
+}
+
+#d1>div:nth-child(1) img{
+height: 150px;
+width: 150px;
+margin-left: 90px;
+
+
+
+}
+
+
+#d1>div:nth-child(2) img{
+margin-top: 60px;
+height: 30px;
+width: 30px;
+}
+#d2{
+background-color: #174c43;
+}
+
+button:hover{
+background-color: #00c66b;
+}
+
+/*  fooder section css */
+
+
+
+
+#btsection>div,#d1{
+display:flex;
+
+width: 80%;
+height: auto;
+margin: auto;
+justify-content: space-between;
+margin-top:20px
+
+
+}
+
+.btnclass{
+
+
+width: 20%;
+height: auto;
+}
+button{
+cursor: pointer;
+border: 0px;
+background-color: transparent;
+font-family: 'Mark simonson proxima nova', sans-serif;
+color: #7d7d7d;
+font-size: 14px;
+text-decoration: none;
+}
+h7{
+color: #fff;
+
+
+}
