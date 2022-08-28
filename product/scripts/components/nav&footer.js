@@ -3,7 +3,7 @@ let navbarFun = () => {
     <div id="left-nav">
     <ul class="mainlist">
         <li id="logo">
-            <a href=""><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd8f444e5106349b4570e0b_lately-nav-logo.svg" alt="">
+            <a href="/noble-volleyball-6086/home/index.html"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd8f444e5106349b4570e0b_lately-nav-logo.svg" alt="">
         </li>
         <li>
             <a href="">Product ▾</a>
@@ -16,21 +16,21 @@ let navbarFun = () => {
                     <a href="">UpContent</a></h4>
                 </li>
                 <li class="one">
-                    <a href="./ai-content-writer.html">AI CONTENT WRITER</a></h4>
+                    <a href="/noble-volleyball-6086/product/ai-content-writer.html">AI CONTENT WRITER</a></h4>
                     <p>Automatically writes and pre-tests content for your social media programs</p>
-                    <a href="./social-analytics.html">SOCIAL ANALYTICS</a></h4>
+                    <a href="/noble-volleyball-6086/product/social-analytics.html">SOCIAL ANALYTICS</a></h4>
                     <p>Informs your content strategy and make your content more engaging with content analytics</p>
                 </li>
                 <li class="one">
-                    <a href="./social-media-marketing.html">SOCIAL MEDIA MARKETING</a></h4>
+                    <a href="/noble-volleyball-6086/product/social-media-marketing.html">SOCIAL MEDIA MARKETING</a></h4>
                     <p>Everything you need to scale your social media marketing program</p>
-                    <a href="./social-selling.html">SOCIAL SELLING</a></h4>
+                    <a href="/noble-volleyball-6086/product/social-selling.html">SOCIAL SELLING</a></h4>
                     <p>Extend your social content across executives, sales, employees, franchises, and more</p>
                 </li>
                 <li class="one">
-                    <a href="./video-autogenerator.html">VIDEO AUTOGENERATOR</a></h4>
+                    <a href="/noble-volleyball-6086/product/video-autogenerator.html">VIDEO AUTOGENERATOR</a></h4>
                     <p>Turn your company videos into bite-sized social media video clips and social media posts</p>
-                    <a href="./parent-accounts.html">PARENT ACCOUNTS</a></h4>
+                    <a href="/noble-volleyball-6086/product/parent-accounts.html">PARENT ACCOUNTS</a></h4>
                     <p>Easily manage parent-child social media accounts</p>
                 </li>
             </ul>
@@ -93,13 +93,13 @@ let footerFun = () => {
         <li>PRODUCT</li>
         <li><a href="">Pricing</a></li>
         <li><a href="">Product Overview</a></li>
-        <li><a href="">AI Social Content Writer</a></li>
-        <li><a href="">Social Media Marketing</a></li>
-        <li><a href="">Social Selling</a></li>
-        <li><a href="">Social Media Analytics</a></li>
-        <li><a href="">Sample AI Autogenerator</a></li>
+        <li><a href="/noble-volleyball-6086/product/ai-content-writer.html">AI Social Content Writer</a></li>
+        <li><a href="/noble-volleyball-6086/product/social-media-marketing.html">Social Media Marketing</a></li>
+        <li><a href="/noble-volleyball-6086/product/social-selling.html">Social Selling</a></li>
+        <li><a href="/noble-volleyball-6086/product/social-analytics.html">Social Media Analytics</a></li>
+        <li><a href="/noble-volleyball-6086/product/video-autogenerator.html">Sample AI Autogenerator</a></li>
         <li><a href="">Autogenerator Chrome Extension</a></li>
-        <li><a href="">Parent Accounts</a></li>
+        <li><a href="/noble-volleyball-6086/product/parent-accounts.html">Parent Accounts</a></li>
     </ul>
 </ul>
 <ul class="fmain">

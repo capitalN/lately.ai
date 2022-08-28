@@ -604,6 +604,7 @@ hr{
 .fsublist a{
     line-height: 25px;
     color: #7d7d7d;
+    font-weight: 500;
 }
 
 .fsublist li{
