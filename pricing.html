@@ -7,10 +7,11 @@
     <title>Lately Pricing</title>
     <link rel="shortcut icon" href="https://media-exp1.licdn.com/dms/image/C510BAQGWuVx4CyzNSQ/company-logo_200_200/0/1519887531110?e=2147483647&v=beta&t=xirA9Lh2LGRrw3HDaHOVkJ5EOQWeO4fUWaHP_rkwDBU" type="image/x-icon">
     <link rel="stylesheet" href="pricing.css">
-    <link rel="stylesheet" href="./home/styles/nav.css">
+    <link rel="stylesheet" href="./component/mynav.css">
+    <link rel="stylesheet" href="./component/myfooter.css">
 </head>
 <body>
-    <div id="nav-container">
+    <div id="navbar">
 
     </div>
 
@@ -233,12 +234,24 @@
             </div>
         </div>
     </div>
+    <div id="footer"></div>
+    <div id="bottom-links"></div>
+    <div id="terms"></div>
 </body>
 </html>
 <script src="pricing.js"></script>
 <script type="module">
-    import {navbar} from "./component/navbar&footer.js"
+    import {navbar,footerFun ,bottomFun, termsFun} from "./component/navbar&footer.js"
 
-    let x= document.getElementById("nav-container")
+    let x= document.getElementById("navbar")
     x.innerHTML=navbar()
+
+    let y= document.getElementById("footer")
+    y.innerHTML=footerFun()
+
+    let z= document.getElementById("bottom-links")
+    z.innerHTML=bottomFun()
+
+    let zz = document.getElementById("terms")
+    zz.innerHTML=termsFun()
 </script>
