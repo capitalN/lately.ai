@@ -1,35 +1,35 @@
 let navbarFun = () => {
     return `<div id="logo">
-    <img style="width: 120px;" src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd8f444e5106349b4570e0b_lately-nav-logo.svg" alt="">
+    <a href="#"><img style="width: 120px;" src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd8f444e5106349b4570e0b_lately-nav-logo.svg" alt=""></a>
 </div>
 <div id="left-nav">
     <input type="checkbox" id="coll">
-    <label id="hamberger_icon" for="coll">☰</label>
+    <label id="hamberger_icon" for="coll"><img style="width: 35px;" src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-color-round/3/01-512.png" alt=""></a></label>
     <ul class="mainlist">
         <li>
             <input type="checkbox" id="coll-head1">
             <label for="coll-head1"><a>Product ▾</a></label>
                 <ul class="sublist" id="prod">
-                    <li class="one">
+                    <li>
                         <a href="">PARTNERS & INTEGRATIONS</a></h4>
                         <p>Find social media platform integrations and content extensions to enhance your AI content creation experience.</p>
                         <a href="">HubSpot Marketing Hub</a></h4>
                         <a href="">Hootsuite</a></h4>
                         <a href="">UpContent</a></h4>
                     </li>
-                    <li class="one">
+                    <li>
                         <a href="">AI CONTENT WRITER</a></h4>
                         <p>Automatically writes and pre-tests content for your social media programs</p>
                         <a href="">SOCIAL ANALYTICS</a></h4>
                         <p>Informs your content strategy and make your content more engaging with content analytics</p>
                     </li>
-                    <li class="one">
+                    <li>
                         <a href="">SOCIAL MEDIA MARKETING</a></h4>
                         <p>Everything you need to scale your social media marketing program</p>
                         <a href="">SOCIAL SELLING</a></h4>
                         <p>Extend your social content across executives, sales, employees, franchises, and more</p>
                     </li>
-                    <li class="one">
+                    <li>
                         <a href="">VIDEO AUTOGENERATOR</a></h4>
                         <p>Turn your company videos into bite-sized social media video clips and social media posts</p>
                         <a href="">PARENT ACCOUNTS</a></h4>
@@ -60,10 +60,9 @@ let navbarFun = () => {
                 <li><a href="">Lately Professional Services</a></li>
                 <li><a href="">Contact Us</a></li>
             </ul>
-    
         </li>
         <li>
-            <a href="">Pricing</a>
+            <label><a href="#">Pricing</a></label>
         </li>
     </ul>
 </div>

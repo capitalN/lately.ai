@@ -17,6 +17,7 @@
         position: sticky;
         top: 0;
         height: 70px;
+        z-index: 999;
     }
     ul.mainlist>li{
         display: inline-block;
@@ -113,7 +114,7 @@
         height: 500px;
     }
     #logo{
-        padding: 10px 0 0 20px;
+        padding: 20px 0 0 20px;
     }
     #navbar a:hover, #footer a:hover{
         color: #00c66b;
@@ -125,6 +126,14 @@
         position: sticky;
         background-color: #fff;
         top: 0;
+        min-height: 70px;
+        z-index: 999;
+    }
+    label a{
+        line-height: 35px;
+        color: #174c43;
+        font-weight: 600;
+        /* padding: 10px; */
     }
 
     /* opening main list *************************/
@@ -138,25 +147,27 @@
     }
     #hamberger_icon{
         display: block;
-        /* float: right; */
         position: absolute;
-        top: 5px;
-        right: 20px;
-        font-size: 30px;
+        top: 18px;
+        right: 3%;
     }
-    .sublist a{
-        display: block;
-        line-height: 25px;
-    }
-
 
     /* opening sub list **************************/
     #prod p{
-        display: none;
+        margin-top: 0;
+        font-size: 14px;
+        margin-right: 20px;
+        color: #5f5f5f;
     }
     .sublist{
         position: relative;
         display: none;
+    }
+    .sublist a{
+        display: block;
+        color: #174c43;
+        margin-top: 10px;
+        font-size: 14px;
     }
     #left-nav input:checked ~ .sublist{
         display: block;
