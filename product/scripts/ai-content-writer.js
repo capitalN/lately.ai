@@ -1,4 +1,4 @@
-import {navbarFun, footerFun ,bottomFun, termsFun} from "./components/nav&footer.js";
+import {navbarFun,footerFun,bottomFun,termsFun} from "/noble-volleyball-6086/navbar/nav&footer.js";
     let navbar = document.getElementById("navbar")
     navbar.innerHTML = navbarFun()
 
