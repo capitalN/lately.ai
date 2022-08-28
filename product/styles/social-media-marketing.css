@@ -1,3 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    height: 70px;
+}
+#logo{
+    width: 120px;
+    margin-right: 20px;
+}
+#logo img{
+    width: 100%;
+}
+ul.mainlist>li{
+    display: inline-block;
+    width: 120px;
+}
+.mainlist a{
+    color: #174c43;
+    font-weight: 500;
+}
+ul.sublist{
+    position: absolute;
+    z-index: 999;
+    display: none;
+    min-width: 100px;
+    margin-top: 5px;
+    padding: 10px;
+}
+#prod{
+    display: none;
+    position: absolute;
+    padding: 0;
+    left: 8%;
+}
+#prod>li{
+    width: 250px;
+    padding: 10px;
+}
+#prod p{
+    padding-left: 10px;
+    margin-top: 0px;
+    color: #7d7d7d;
+}
+ul.mainlist>li:hover>#prod{
+    display: flex;
+}
+#prod>li:first-child, #prod>li:last-child{
+    background-color:#e8f8f2;
+}
+ul.mainlist>li:hover>ul.sublist{
+    display: block;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+}
+
+
+#navbar a{
+    line-height: 35px;
+    padding: 10px;
+}
+#navbar a:hover, #footer a:hover{
+    color: #00c66b;
+}
+
+button{
+    padding: 10px;
+    border: 2px solid #00c66b;
+    background-color: transparent;
+}
+button:hover{
+    background-color: #00c66b;
+    color: white;
+}
+#main{
+    height: 600px;
+    background-color: gold;
+}
+
+
+
+
+
+
+
 body{
     margin: 0px;
     font-family: 'Mark simonson proxima nova', sans-serif;
@@ -464,4 +562,53 @@ hr{
 #a>a:hover{
     background-color: #00c66b;
     color: white;
+}
+
+
+
+
+
+#footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 20px;
+}
+.fsublist{
+    margin-bottom: 20px;
+}
+
+#bottom_links{
+    border-top: 1px solid #d8d8d8;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    height: 50px;
+}
+#bottom_links img{
+    width: 120px;
+}
+
+#social img{
+    width: 27px;
+    margin: 5px;
+}
+
+.fsublist a{
+    line-height: 25px;
+    color: #7d7d7d;
+    font-weight: 500;
+}
+
+.fsublist li{
+    margin-left: -30px;
+}
+
+#terms{
+    background-color: #174c43;
+    color: #ffffff80;
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
 }
