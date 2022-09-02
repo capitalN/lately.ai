@@ -1,0 +1,149 @@
+        #Aheadder{
+            width: 100%;
+            height: 250px;
+           background-color: #174c43;
+        }
+        #Aheadder>h1{
+          color: aliceblue;
+         text-align: center;
+         font-size: 50px;
+         margin-top: 0px;
+         font-weight: bold;
+        }
+        h3{
+         padding-top: 50px;
+            color: #00c66b;
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        #img>img{
+            width: 55%;
+            height: 400px;
+           margin-left: 320px;
+           margin-top: 70px;
+            display: inline-block;
+        }
+        #details{
+            margin-left:320px ;
+            
+            width: 55%;
+            margin-top: 30px;
+        }
+
+        #details>p,ul{
+            margin-bottom: 16px;
+            font-family: 'Noto Sans', sans-serif;
+          
+            font-size: 17px;
+            line-height: 24px;
+        }
+        
+        .hitwork{
+            width: 85%;
+            padding-bottom: 20px;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 17px;
+        } 
+        #details>h1{
+            color: #174c43;
+            margin-bottom: 10px;
+        }
+        #details>img{
+            width: 70%;
+            margin-left: 120px;
+        }
+        #contactus{
+            background-color: #e8f8f2;
+            width: auto;
+            height: 400px;
+            margin-top: 30px;
+           text-align: center;
+          
+        }
+        #contactus>div{
+          width: 66%;
+          height: 200px;  
+          margin-top: 50px;
+          margin-left: 250px;
+          display: flex;
+         justify-content: space-between;
+          
+        }
+        #contactus>div>div{
+            width: 31%;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 0 12px -8px #999;
+            border: 1px none #000;
+            background-image:
+            linear-gradient(to bottom, rgba(255, 255, 251, 0.5), rgba(223, 223, 223, 0.5)),
+            url('https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fecf40bea5148a41aa207a7_pattern-light.svg');
+        }
+        #contactus>h1{
+            color: #174c43;
+            padding-top: 40px;
+
+        }
+        .boxx{
+            display: flex;
+            height: 200px;
+           
+        }
+         #d1>div:nth-child(1) img{
+            height: 150px;
+           width: 150px;
+           margin-left: 90px;
+         }
+        
+         
+         #d1>div:nth-child(2) img{
+            margin-top: 60px;
+            height: 30px;
+            width: 30px;
+         }
+         #d2{
+            background-color: #174c43;
+         }
+        
+        button:hover{
+            background-color: #00c66b;
+        }
+
+        /*  fooder section css */
+        #btsection>div,#d1{
+            display:flex;
+           
+            width: 80%;
+            height: auto;
+            margin: auto;
+            justify-content: space-between;
+            margin-top:20px
+            
+            
+        }
+
+        .btnclass{
+           
+           
+            width: 20%;
+            height: auto;
+        }
+        button{
+        cursor: pointer;
+        border: 0px;
+        background-color: transparent;
+        font-family: 'Mark simonson proxima nova', sans-serif;
+        color: #7d7d7d;
+        font-size: 14px;
+        text-decoration: none;
+        }
+        h7{
+            color: #fff;
+           
+            
+        }
+       
+       
+       

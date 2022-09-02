@@ -1,0 +1,170 @@
+@media (min-width:1000px) {
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    *{
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Noto Sans', sans-serif;
+    }
+    #navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        height: 70px;
+        z-index: 999;
+    }
+    ul.mainlist>li{
+        display: inline-block;
+        width: 120px;
+    }
+    .mainlist a{
+        color: #174c43;
+        font-weight: 500;
+    }
+    ul.sublist{
+        position: absolute;
+        z-index: 999;
+        display: none;
+        min-width: 100px;
+        padding: 10px;
+    }
+    #prod{
+        display: none;
+        position: absolute;
+        padding: 0;
+        left: 8%;
+    }
+    #prod>li{
+        width: 250px;
+        padding: 10px;
+    }
+    #prod p{
+        padding-left: 10px;
+        margin-top: 0px;
+        color: #7d7d7d;
+        display: block;
+    }
+
+    ul.mainlist>li:hover>#prod{
+        display: flex;
+    }
+    #prod>li:first-child, #prod>li:last-child{
+        background-color:#e8f8f2;
+    }
+    ul.mainlist>li:hover>ul.sublist{
+        display: block;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: #fff;
+    }
+
+    #navbar a{
+        line-height: 35px;
+        padding: 10px;
+    }
+    #navbar a:hover, #footer a:hover{
+        color: #00c66b;
+    }
+
+    #navbar button{
+        padding: 10px;
+        border: 2px solid #00c66b;
+        background-color: transparent;
+    }
+    #navbar button:hover{
+        background-color: #00c66b;
+        color: white;
+    }
+
+    #hamberger_icon{
+        display: none;
+    }
+    .checkbox{
+        display: none;
+    }
+}
+
+
+
+/* small screen **********************/
+
+@media (max-width:1000px) {
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    *{
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Noto Sans', sans-serif;
+    }
+    #logo1{
+        padding: 20px 0 0 20px;
+    }
+    #navbar a:hover, #footer a:hover{
+        color: #00c66b;
+    }
+    #right-nav a{
+        display: none;
+    }
+    #navbar{
+        position: sticky;
+        background-color: #fff;
+        top: 0;
+        min-height: 70px;
+        z-index: 999;
+    }
+    label a{
+        line-height: 35px;
+        color: #174c43;
+        font-weight: 600;
+    }
+
+    /* opening main list *************************/
+
+    .mainlist{
+        position: relative;
+        display: none;
+    }
+    #left-nav input:checked ~ .mainlist{
+        display: block;
+    }
+    #hamberger_icon{
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 3%;
+    }
+
+    /* opening sub list **************************/
+    #prod p{
+        margin-top: 0;
+        font-size: 14px;
+        margin-right: 20px;
+        color: #5f5f5f;
+    }
+    .sublist{
+        position: relative;
+        display: none;
+    }
+    .sublist a{
+        display: block;
+        color: #174c43;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    #left-nav input:checked ~ .sublist{
+        display: block;
+    }
+
+    .checkbox{
+        display: none;
+    }
+}
+

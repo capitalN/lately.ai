@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lately Office Hours Sign Up</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/favicons/1c6f0a1248da931b66434a405f19322c5ea6022e611eaf52de580f5c.png?6689e928e409a49bc852121a7b0dcd27" type="image/x-icon">
+    <link rel="stylesheet" href="../navbar/nav.css">
+    <link rel="stylesheet" href="../navbar/footer.css">
+    <link rel="stylesheet" href="./style/office_hour_signup.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="top-div">
+        <h1 style="font-size: 40px;">Lately Office Hours Sign-Up</h1>
+        <div style="width: 75%; margin: auto;">
+            <p>
+                Each week, we hold a live Office Hours session, open to the public – 
+                totally free and totally conversational. Topics span from copywriting tips, 
+                social media best practices, how to optimize Lately’s AI like an uber-pro and a 
+                potpourri of other things we just feel like talking about. Because, life.
+            </p>
+        </div>
+    </div>
+
+    <div id="mid-div">
+        <div>
+            <b>NEXT:</b>
+            <h1>Content Marketing and the War for Attention</h1>
+            <b>Tuesday, August 2nd at 2 PM East/11 AM West/7PM BST</b>
+            <p>You’ve heard that content is king...but what does that actually mean? 
+                Every company has a story to tell (and there are a million and a half ways to tell it). 
+                So what’s the best way to share your content? IS there a best way?</p>
+            <p>Join us as we welcome Andrew Jenkins, social media master and content KING, who will share 
+                the ins and outs of social media content and how to stop the scroll. Don’t miss it!
+            <p>‍Andrew Jenkins is CEO of Volterra, a professional services firm specializing in social media 
+                and social selling strategies. Based in Toronto, Canada, he was formerly the Head of Social 
+                Media Strategy for Royal Bank of Canada (RBC) and has worked with a diverse list of companies 
+                in North America and Europe, including CIBC, Rogers, Bell Canada, InfoSpace and The Aga Khan 
+                Foundation. A regular international speaker and panellist at numerous industry conferences and 
+                events, he teaches a course on Social Media Strategies for the Enterprise at the University of 
+                Toronto’s School of Continuing Studies. He is also the author of Social Media Marketing for 
+                Business: Scaling an Integrated Social Media Strategy Across Your Organization.</p>
+        </div>
+        <div id="signUp_div">
+            <h2>Click this bigass blue button to sign up for the next Office Hours👇</h2>
+            <a href="../pricing/signup.html"><button>SIGN UP HERE</button></a>
+        </div>
+    </div>
+    <div id="bottom-div">
+        <h1>Ready to start generating more effective social posts with AI?</h1>
+        <a href="../pricing/signup.html"><button>TRY IT FREE</button></a>
+    </div>
+    <div id="footer"></div>
+    <div id="bottom_links"></div>
+    <div id="terms"></div>
+</body>
+</html>
+
+    <script type="module">
+        import {navbarFun, footerFun ,bottomFun, termsFun} from "../navbar/nav&footer.js";
+        let navbar = document.getElementById("navbar")
+        navbar.innerHTML = navbarFun()
+
+        let footer = document.getElementById("footer")
+        footer.innerHTML = footerFun()
+
+        let bottom_links = document.getElementById("bottom_links")
+        bottom_links.innerHTML = bottomFun()
+
+        let terms = document.getElementById("terms")
+        terms.innerHTML = termsFun();
+    </script> 
+    

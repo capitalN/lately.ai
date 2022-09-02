@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lately Live Replys</title>
+    <link rel="stylesheet" href="./live_replys.css">
+    <link rel="shortcut icon" href="https://i.pinimg.com/favicons/1c6f0a1248da931b66434a405f19322c5ea6022e611eaf52de580f5c.png?6689e928e409a49bc852121a7b0dcd27" type="image/x-icon">
+    <link rel="stylesheet" href="../navbar/nav.css">
+    <link rel="stylesheet" href="../navbar/footer.css"></head>
+</head>
+<body>
+    <div id="navbar">
+        <h1>navbar</h1>
+    </div>
+    <div id="top-div">
+        <h3 style="color: #00c66b;">LATELY OFFICE HOURS</h3>
+        <h1 style="font-size: 40px;">Lately LIVE Replays</h1>
+        <p>Thirty-minute interviews and lively conversations with loads of tricks 
+            ’n tips from the best in the marketing world.</p>
+        <a href="../pricing/signup.html"><button style="color: white;">Sign Up Here</button></a>
+    </div>
+
+    <div id="container"></div>
+    <h1></h1>
+    <div id="pagination">
+        <button id="prev" onclick="prevFun()">< prev</button>
+        <button id="next" onclick="nextFun()">next ></button>
+    </div>
+    <div id="bottom-div">
+        <h1>Ready to start generating more effective social posts with AI?</h1>
+        <a href="../pricing/signup.html"><button>TRY IT FREE</button></a>
+    </div>
+    <div id="footer"></div>
+    <div id="bottom_links"></div>
+    <div id="terms"></div>
+</body>
+</html>
+
+<script>
+    let arr = [
+        {
+            image:"https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60d38545ffe8f5669ab29e96_mann-p-500.png",
+            title:"Marketing Yourself Before and AFTER You Get the Job"
+        },
+        {
+            image:"https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60904b71bc6fc4819f8965e9_wallace-p-500.png",
+            title:"Infographics + Social Media - When How Your Message LOOKS Matters with Brian Wallace"
+        },
+        {
+            image:"https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/602efdb38edf6f7342b6e819_sam-p-500.png",
+            title:"The Podcast Secrets That No One Tells You (GAH!)"
+        },
+        {
+            image:"https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/6005e90d650d2a536ea93325_bowen-p-500.png",
+            title:"When Really Really REALLY Terrible Things Happen To Good People"
+        },
+        {
+            image:"https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5ff25d7c919ea6638426d88c_Ohno-p-500.png",
+            title:"Apolo Ohno: Reinvention in the Workplace – Writing Your Way Through Change"
+        },
+        {
+            image:"https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5ff25dcf98f9f97f74c64e92_maylarge-p-500.png",
+            title:"May King Tsang: FOMO for Copywriting – How to Leverage Urgency in a World Where “Live” is Less"
+        },
+        {
+            image:"https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffa8fb42f9e001be21809d_fanzo_large-p-500.png",
+            title:"May King Tsang: FOMO for Copywriting – How to Leverage Urgency in a World Where “Live” is Less",
+        },
+        {
+            image:"https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60536ec50693fa48cfb8239d_robrose-p-500.png",
+            title:"How to Avoid “Virtual-Everything” Fatigue"
+        },
+        {
+            image:"https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffa937e522018fa4d08036_large-p-500.png",
+            title:"Sarah Evans: How to Market an Online Conference"
+        },
+        {
+            image:"https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/602efdb38edf6f7342b6e819_sam-p-500.png",
+            title:"The Podcast Secrets That No One Tells You (GAH!)"
+        },
+        {
+            image:"https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/6005e90d650d2a536ea93325_bowen-p-500.png",
+            title:"When Really Really REALLY Terrible Things Happen To Good People"
+        },
+        {
+            image:"https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5ff25d7c919ea6638426d88c_Ohno-p-500.png",
+            title:"Apolo Ohno: Reinvention in the Workplace – Writing Your Way Through Change"
+        },
+    ]
+
+let x = 0;
+function append(arr){
+    document.getElementById("container").innerHTML = null;
+    for(let i=x; i<6+x; i++){
+        let card = document.createElement("div")
+        card.setAttribute("class","card");
+
+        card.addEventListener("click",function(){
+            readMore(arr[i]);
+        })
+
+        let img = document.createElement("img");
+        img.src = arr[i].image;
+
+        let div = document.createElement("div")
+        let div2 = document.createElement("div")
+        
+        let ttl = document.createElement("h3");
+        ttl.innerText = arr[i].title;
+
+        let a = document.createElement("a");
+        a.href="./live_reply_readmore.html";
+        a.innerText="Read More";
+
+        div.append(ttl);
+        div2.append(a)
+        card.append(img,div,div2)
+        document.getElementById("container").append(card);
+    }
+}
+append(arr);
+
+let readMore = (i) => {
+    window.location.href="./live_reply_readmore.html";
+}
+ 
+function nextFun(){
+    if(x==6){
+        return
+    }
+    x=x+3;
+    append(arr)
+}
+function prevFun(){
+    if(x==0){
+        return
+    }
+    x=x-3;
+    append(arr)
+}
+</script>
+
+<script type="module">
+    import {navbarFun, footerFun ,bottomFun, termsFun} from "../navbar/nav&footer.js";
+    let navbar = document.getElementById("navbar")
+    navbar.innerHTML = navbarFun()
+
+    let footer = document.getElementById("footer")
+    footer.innerHTML = footerFun()
+
+    let bottom_links = document.getElementById("bottom_links")
+    bottom_links.innerHTML = bottomFun()
+
+    let terms = document.getElementById("terms")
+    terms.innerHTML = termsFun();
+</script> 

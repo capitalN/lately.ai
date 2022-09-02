@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(247,249,251);
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    height:50px;
+    border:0px solid red;
+    background-color: rgb(255,255,255);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position:sticky;
+    top:0px;
+    z-index: 1;
+}
+nav>div{
+    width:70%;
+    margin:auto;
+    border:0px solid blue;
+}
+nav>div>a>img{
+    width:10%;
+}
+#parent{
+    margin-top: 40px;
+    border:0px solid red;
+}
+#parent>#child-1{
+    width:70%;
+    margin:auto;
+}
+#parent>#child-1>h3{
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(48,68,85);
+    margin-top: -5px;
+}
+#parent>#child-1>p{
+    font-size: 16px;
+    color:rgb(85,89,101);
+    margin-top:-20px;
+    line-height: 25px;
+}
+#child-2{
+    width:70%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    background-color: white;
+}
+.childs{
+    border:1px solid;
+    padding:0px 10px 0px 10px;
+    border-radius: 5%;
+}
+.childs>p{
+    color:rgb(48,68,85);
+    
+}
+.childs>p+div+p{
+    line-height: 25px;
+    height:100px;
+}
+.childs>div{
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.childs>div>img{
+    width:70%;
+}
+.childs>a>button{
+    width:100%;
+    margin-bottom: 10px;
+    background-color: rgb(40,167,69);
+    color:white;
+    border:none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-top:10px;
+    padding-bottom:10px;
+}

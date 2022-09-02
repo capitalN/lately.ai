@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contack Us</title>
+    <link rel="stylesheet" href="contectus.css" />
+    <link rel="shortcut icon" href="https://i.pinimg.com/favicons/1c6f0a1248da931b66434a405f19322c5ea6022e611eaf52de580f5c.png?6689e928e409a49bc852121a7b0dcd27" type="image/x-icon">
+    <link rel="stylesheet" href="../navbar/nav.css">
+    <link rel="stylesheet" href="../navbar/footer.css">
+</head>
+<body>
+    
+    <div id="navbar"></div>
+   <div id="contectusnav">
+   <strong>Contact Us </strong>
+     <p> Waving hi! 👋 Fill out the contact form below, connect with us on social or try Lately free now.</p>
+   </div>
+     <!-- signup page  -->
+
+     <div id="signuppage">
+        <div id="msgbox">
+
+            <!-- name div -->
+            <div> 
+                <div>
+                    <label for="">First Name</label><br>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Last Name</label><br>
+                    <input  class="sidebar"  type="text">
+                </div>
+            </div>
+           
+            <!-- email div -->
+            <div>
+                <label for="">Email</label><br>
+                <input type="text"><br>
+            </div>
+            
+            <!-- phone number div -->
+           <div>
+                <div>
+                    <label for="">Phone Number</label><br>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label  for="">company Name</label><br>
+                    <input  class="sidebar" type="text">
+                </div>
+           
+           </div>
+           <div>
+             
+            <!-- massage div -->
+            <label for="">Massage</label><br>
+            <input type="text">
+           </div>
+           
+             <button>SEND</button>
+          
+        </div>
+
+        <!-- side masg boxx try it free -->
+        <div id="tryitfree">
+              <div>
+                <h1>Lately’s AI learns and augments your brand voice, makes it more effective and amplifies your social media army of “one” to “many.”</h1>
+              </div>
+             
+              <div id="tyrbtn"> 
+                <a href=""><button>TRY IT FREE</button></a>
+              </div>
+             
+
+              <div id="socialmedia">
+                
+              <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/600b17e7873061f51390f350_social_facebook.svg" alt="">
+              <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/600b17e763a1ef7949a2e401_social_linkedin.svg" alt="">
+              <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/600b17e85c4896f2f41a1d6a_social_twitter.svg" alt="">
+              <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6226466502e53219f7efd367_ig.svg" alt="">
+              <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6226466598aa3eef80ba3f0e_yt.svg" alt="">
+             <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/62264665c664c3604de9d3d7_tt.svg" alt="">
+              </div>
+        </div>
+
+
+
+     </div>
+
+ 
+     <!-- bootom section -->
+
+     <div id="footer"></div>
+     <div id="bottom_links"></div>
+     <div id="terms"></div>
+</body>
+</html>
+
+<script type="module">
+    import {navbarFun, footerFun ,bottomFun, termsFun} from "../navbar/nav&footer.js";
+    let navbar = document.getElementById("navbar")
+    navbar.innerHTML = navbarFun()
+
+    let footer = document.getElementById("footer")
+    footer.innerHTML = footerFun()
+
+    let bottom_links = document.getElementById("bottom_links")
+    bottom_links.innerHTML = bottomFun()
+
+    let terms = document.getElementById("terms")
+    terms.innerHTML = termsFun();
+</script> 
