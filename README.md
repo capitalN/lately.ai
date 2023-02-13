@@ -1,3 +1,4 @@
+# LATELY.AI
 ai based content creator website
 
 unit-3 group projects ( clone of:- https://www.lately.ai/ )
